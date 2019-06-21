@@ -1,43 +1,43 @@
 @media print {
     #about,
     .tm-sidebar,
-    .tm-main-content section:last-of-type,
-    #ideas .carousel-indicators,
-    .blocks .tm-content-box {
+    section:last-of-type,
+    .blocks .tm-content-box,
+    .carousel-indicators {
         display: none;
     }
     .tm-main-content,
     .container,
     .tm-content-box,
     body {
-        padding: 0px;
+        padding: 0;
         width: 100%;
         max-width: 100%;
     }
-    .tm-banner-inner p.tm-banner-text {
+    p.tm-banner-text {
         text-shadow: none;
         letter-spacing: initial;
         word-spacing: initial;
         font-size: 20px;
     }
-    .tm-banner-inner p.tm-banner-text::first-letter {
+    p.tm-banner-text::first-letter {
         color: unset;
         font-size: unset;
     }
     .tm-content-header {
-        margin-top: 0px;
+        margin-top: 0;
         max-width: 100%;
     }
     .flex-2-col,
     .flex-item,
     .tm-team-description-container,
-    #ideas .active {
+    #ideas {
         display: block;
-        max-width: 100%;
     }
     .tm-team-description-container,
     .tm-footer {
         background-color: #fff;
+        max-width: 1300px;
     }
     .tm-content-box p,
     .blocks p {
@@ -59,7 +59,7 @@
         font-weight: normal;
         text-align: center;
     }
-    .heading ol {
+    .padding-medium ol {
         list-style-type: none !important;
         width: 52%;
         margin-left: auto;
@@ -69,6 +69,9 @@
     .padding-medium ol a {
         color: #000000;
         font-size: 16px;
+    }
+    .padding-medium ol a:visited {
+        color: initial !important;
     }
     .padding-medium ol li::first-letter {
         color: #76cdd7;
@@ -80,20 +83,12 @@
     .padding-medium ol > li:nth-child(even) {
         text-align: right;
     }
-    .heading ol a:visited {
-        color: initial !important;
-    }
-    .margin-b-10,
     .tm-content-box,
     .tm-section-title {
-        margin: 0px;
+        margin: 0;
     }
     .padding-medium {
         padding: 4px;
-    }
-    p {
-        text-indent: 0px !important;
-        font-style: normal !important;
     }
 } 
 
@@ -112,7 +107,7 @@
     .tm-banner-text {
         letter-spacing: 4px;
         word-spacing: 1ch;
-        text-shadow: 0px 3px 1px #76cdd7, 0px 5px 4px #76cdd7, 0px 7px 9px #76cdd7;
+        text-shadow: 0 3px 1px #76cdd7, 0 5px 4px #76cdd7, 0 7px 9px #76cdd7;
         animation-name: textrotate;
         animation-delay: 1s;
         animation-duration: 3s;
@@ -144,12 +139,11 @@
     }
     .heading ol a.text::after {
         content: "New";
-        display: inline-block;
-        position: absolute;
         font-size: 10px;
         color: #ff0000;
         font-variant: small-caps;
         font-weight: bold;
+        vertical-align: super;
     }
     .heading ol a:hover {
         color: #ffb347;
@@ -174,9 +168,11 @@
         color: #9299AD;
         font-style: italic;
     }
-    .gallery-container .box-bg h2:hover{
-        font-weight: bold;
-    }
+    h2.tm-box-bg-title:hover{
+		background-color: #76cdd7;
+		color: #fff;
+		font-weight: bold;
+	}
     .tm-team-description-container > h2 + p,
     .carousel-item h2 + p {
         line-height: 2em;
@@ -228,8 +224,7 @@
         border-radius: 0px;
         font-weight: 300;
     }
-    .contact-form button.submit-btn:hover,
-    .gallery-container .box-bg h2:hover {
+    .contact-form button.submit-btn:hover {
         background-color: #76cdd7;
         color: #fff;
     }
