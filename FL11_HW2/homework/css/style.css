@@ -77,10 +77,10 @@
         color: #9299AD;
         font-style: italic;
     }
-    .gallery-container h2.tm-box-bg-title:hover{
-		background-color: #76cdd7;
-		color: #fff;
-		font-weight: bold;
+    .gallery-container h2.tm-box-bg-title:hover {
+        background-color: #76cdd7;
+        color: #fff;
+        font-weight: bold;
 	}
     .tm-team-description-container h2 + p,
     .carousel-content h2 + p {
