@@ -1,6 +1,6 @@
-let a = parseFloat(prompt('Please, enter the first length of the triangle side (A)', ''));
-let b = parseFloat(prompt('Please, enter the second length of the triangle side (B)', ''));
-let c = parseFloat(prompt('Please, enter the third length of the triangle side (C)', ''));
+let a = parseFloat(prompt('Please, enter the first length of the triangle side (A)', '')),
+	b = parseFloat(prompt('Please, enter the second length of the triangle side (B)', '')),
+	c = parseFloat(prompt('Please, enter the third length of the triangle side (C)', ''));
 
 if (a + b > c && b + c > a && a + c > b) {
 	if (a === b && b === c) {
