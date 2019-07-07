@@ -11,5 +11,5 @@ if (a + b > c && b + c > a && a+ c > b) {
 		console.log('Normal triangleconst');
 	}
 } else {
-	console.log('Triangle doesn’t exist');
+    console.log('Triangle doesn’t exist');
 }
