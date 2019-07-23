@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-family: 'LatoRegular', sans-serif;
+}
+
+h1 { 
+    font-size: 5em;
+    text-align: center; 
+    color: rgb(63, 204, 209);
+}
+hr {
+    border: solid 3px rgb(63, 204, 209);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    color: lightskyblue;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+input { 
+    font-size: 20px; 
+    padding: 20px;
+    border: 1px solid rgb(63, 204, 209);;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+}
+
+#add-btn .material-icons { 
+    font-size: 50px; 
+}
+
+#add-btn:hover {
+    color: rgb(63, 204, 209);
+    transition: all .5s;
+}
+
+li {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    font-size: 24px;
+}
+
+.edit .checkbox, 
+.edit .delete, 
+.edit label, 
+#task-list input { 
+    display: none; 
+}
+
+#task-list .edit input {
+    display: inline-block;
+    width: 30%;
+    height: 10px;
+}
+
+#task-list i {
+    font-size: 35px;
+    color: rgb(63, 204, 209);
+}
+
+li .delete {
+    position: absolute;
+    left: 65%;
+}
+
+#task-list .checkbox i { 
+    color: grey; 
+} 
